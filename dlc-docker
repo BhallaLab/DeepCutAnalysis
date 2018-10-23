@@ -172,4 +172,4 @@ NV_DOCKER_ARGS="$NV_DOCKER_ARGS -v $USER_HOME:$USER_HOME -p $SSHPORT:22 -p $JUPY
 #echo "COMMAND: NV_GPU=$GPU" $DOCKER $CMD $NV_DOCKER_ARGS $(echo \$$USER_ARGS | cut -d " " -f2-)
 #echo " "
 echo $GPU $DOCKER $CMD $NV_DOCKER_ARGS $(echo \$$USER_ARGS | cut -d " " -f2-)
-NV_GPU=$GPU $DOCKER $CMD $NV_DOCKER_ARGS $(echo \$$USER_ARGS | cut -d " " -f2-)
+NV_GPU=$GPU $DOCKER $CMD $NV_DOCKER_ARGS $(echo \$$USER_ARGS | cut -d " " -f2-) 
