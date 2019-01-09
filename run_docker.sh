@@ -6,4 +6,4 @@ GPU=1 nvidia-docker run \
 	-it bhallalab/deeplabcut2:latest \
 	-e DISPLAY=$DISPLAY \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
-        /usr/bin/xterm
+        /bin/bash
