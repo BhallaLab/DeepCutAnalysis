@@ -18,4 +18,4 @@ RUN pip install ipywidgets
 RUN pip3 install ipywidgets
 
 RUN pip3 install seaborn
-RUN ./install_wxpython.sh
+RUN bash -c ./install_wxpython.sh
