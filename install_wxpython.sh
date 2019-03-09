@@ -13,5 +13,6 @@ apt install \
     libsm-dev \
     libgtk-3-dev \
     libwebkitgtk-3.0-dev \
-    libxtst-dev
+    libxtst-dev \
+    python3-tk
 python3 -m pip install wxpython
