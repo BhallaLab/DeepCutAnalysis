@@ -18,19 +18,12 @@ RUN pip install ipywidgets
 RUN pip3 install ipywidgets
 
 RUN pip3 install seaborn
-RUN apt install \
-    dpkg-dev \
-    build-essential \
-    libjpeg-dev \
-    libtiff-dev \
-    libsdl1.2-dev \
-    libgstreamer-plugins-base0.10-dev \
-    libnotify-dev \
-    freeglut3 \
-    freeglut3-dev \
-    libsm-dev \
-    libgtk-3-dev \
-    libwebkitgtk-3.0-dev \
-    libxtst-dev \
-    python3-tk
+RUN apt install -y \
+    dpkg-dev build-essential \
+    libjpeg-dev libtiff-dev \
+    libsdl1.2-dev libgstreamer-plugins-base0.10-dev \
+    libnotify-dev freeglut3 \
+    freeglut3-dev libsm-dev \
+    libgtk-3-dev libwebkitgtk-3.0-dev \
+    libxtst-dev python3-tk
 RUN python3 -m pip install wxpython
